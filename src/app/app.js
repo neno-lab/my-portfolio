@@ -1,3 +1,5 @@
+import '../resources/styles/root.scss';
+
 import LayoutDesktop from './layoutDesktop';
 import LayoutMobile from './layoutMobile';
 import React from 'react';
