@@ -1,9 +1,10 @@
 import './style.scss';
 
+import Main from '../../containers/Main';
 import React from 'react';
 
 const Home = () => (
-  <div>Home</div>
+  <Main className='home-main-holder' />
 );
 
 export default Home;
