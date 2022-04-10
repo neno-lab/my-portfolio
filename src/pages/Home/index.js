@@ -1,15 +1,24 @@
 import './style.scss';
 
 import Button from '../../components/universal/Button';
+import DivContent from '../../containers/DivContent';
 import Main from '../../containers/Main';
+import me from '../../resources/images/me.jpg';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 const Home = ({ history }) => (
   <Main className='home-main-holder'>
-    <h3>Hi my name is</h3>
-    <h1>Neno Židić</h1>
+    <DivContent className='home-div-content-titles-img-holder'>
+      <div className='home-titles-holder'>
+        <h3>Hi my name is</h3>
+        <h1>Neno Židić</h1>
+      </div>
+      <div className='home-img-holder'>
+        <img src={me} />
+      </div>
+    </DivContent>
     <p>´´A Frontend Developer with 2 years of industrial experience. When it comes to work, I´m very emotional, ambitious and passionate. I would describe myself as success-driven and a team player. I will gladly accept constructive criticism that will help me make further progress not only as a developer, but also as a person.
     Regarding my free time, I try to work on expanding my knowledge by reading books and watching videos on various technologies.
 
