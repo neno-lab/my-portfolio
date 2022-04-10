@@ -3,7 +3,7 @@ import './style.scss';
 import { actionAddPage } from '../../../redux/actions/ui';
 import { connect } from 'react-redux';
 import Dropdown from '../Dropdown';
-import DropdownItem from '../Dropdown/pieces/DropdownItem';
+import DropdownItemComponent from '../Dropdown/pieces/DropdownItem';
 import DropdownList from '../Dropdown/pieces/DropdownList';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { pages } from '../../../helpers/constants';
@@ -12,6 +12,8 @@ import React from 'react';
 
 import { AiFillFolder, AiFillFolderOpen } from 'react-icons/ai';
 import { useLocation, withRouter } from 'react-router-dom';
+
+const DropdownItem = React.memo(DropdownItemComponent);
 
 const Sidebar = ({ excludedRoutes, history, dispatch }) => {
   const { pathname } = useLocation();

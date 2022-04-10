@@ -14,52 +14,48 @@ const Sidebar = React.memo(SidebarComponent);
 const DivContent = React.memo(DivContentComponent);
 const Header = React.memo(HeaderComponent);
 
-const LayoutDesktop = () => {
-  console.log('tu sam');
-
-  return (
-    <Router>
-      <DivContent className='layout-desktop-holder'>
-        <Sidebar excludedRoutes={['not-found']} />
-        <DivContent>
-          <Header />
-          <Switch>
-            <Route
-              exact
-              component={Home}
-              path='/home'
-            />
-            <Route
-              exact
-              component={About}
-              path='/about'
-            />
-            <Route
-              exact
-              component={Projects}
-              path='/projects'
-            />
-            <Route
-              exact
-              component={Contact}
-              path='/contact'
-            />
-            <Route
-              exact
-              component={NotFound}
-              path='/not-found'
-            />
-            <Route
-              exact
-              path='*'
-            >
-              <Redirect to='/not-found' />
-            </Route>
-          </Switch>
-        </DivContent>
+const LayoutDesktop = () => (
+  <Router>
+    <DivContent className='layout-desktop-holder'>
+      <Sidebar excludedRoutes={['not-found']} />
+      <DivContent>
+        <Header />
+        <Switch>
+          <Route
+            exact
+            component={Home}
+            path='/home'
+          />
+          <Route
+            exact
+            component={About}
+            path='/about'
+          />
+          <Route
+            exact
+            component={Projects}
+            path='/projects'
+          />
+          <Route
+            exact
+            component={Contact}
+            path='/contact'
+          />
+          <Route
+            exact
+            component={NotFound}
+            path='/not-found'
+          />
+          <Route
+            exact
+            path='*'
+          >
+            <Redirect to='/not-found' />
+          </Route>
+        </Switch>
       </DivContent>
-    </Router>
-  );
-};
+    </DivContent>
+  </Router>
+);
 
 export default LayoutDesktop;
