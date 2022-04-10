@@ -4,6 +4,8 @@
     width: 100%;
     height: calc(100% - 38px);
     padding: 150px;
+    opacity: 0;
+    animation: fadeIn 0.25s forwards;
     
     * {
       font-family: 'Consolas', monospace;
@@ -53,8 +55,8 @@
   }
 
   &-img-holder {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 2px solid var(--code-blue);
     overflow: hidden;

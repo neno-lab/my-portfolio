@@ -12,6 +12,10 @@
   box-shadow: none;
 }
 
+body {
+  background-color: var(--black);
+}
+
 .layout-desktop {
   &-holder {
     display: flex;
