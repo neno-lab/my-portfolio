@@ -1,8 +1,10 @@
 import About from '../pages/About';
+import Contact from '../pages/Contact';
 import DivContentComponent from '../containers/DivContent';
 import HeaderComponent from '../components/desktop/Header';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
+import Projects from '../pages/Projects';
 import React from 'react';
 import SidebarComponent from '../components/desktop/Sidebar';
 
@@ -31,6 +33,16 @@ const LayoutDesktop = () => {
               exact
               component={About}
               path='/about'
+            />
+            <Route
+              exact
+              component={Projects}
+              path='/projects'
+            />
+            <Route
+              exact
+              component={Contact}
+              path='/contact'
             />
             <Route
               exact

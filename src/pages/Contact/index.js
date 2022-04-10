@@ -1,9 +1,10 @@
 import './style.scss';
 
+import Main from '../../containers/Main';
 import React from 'react';
 
 const Contact = () => (
-  <div>Contact</div>
+  <Main className='contact-main-holder' />
 );
 
 export default Contact;

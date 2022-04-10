@@ -14,7 +14,7 @@ const persistConfig = {
   key: 'root',
   storage,
   whitelist: [
-    'persistedValue', 'pages'
+    'persistedValue'
   ]
 };
 

@@ -1,9 +1,10 @@
 import './style.scss';
 
+import Main from '../../containers/Main';
 import React from 'react';
 
 const Projects = () => (
-  <div>Projects</div>
+  <Main className='projects-main-holder' />
 );
 
 export default Projects;

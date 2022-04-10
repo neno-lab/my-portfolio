@@ -1,18 +1,22 @@
 export const pages = [
   {
     id: 'home',
-    name: 'Home'
+    name: 'Home',
+    pathname: '/home'
   },
   {
     id: 'about',
-    name: 'About'
+    name: 'About',
+    pathname: '/about'
   },
   {
     id: 'projects',
-    name: 'Projects'
+    name: 'Projects',
+    pathname: '/projects'
   },
   {
     id: 'contact',
-    name: 'Contact'
+    name: 'Contact',
+    pathname: '/contact'
   }
 ];
