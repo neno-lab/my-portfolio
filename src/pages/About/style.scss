@@ -4,6 +4,7 @@
     width: 100%;
     height: calc(100% - 38px);
     padding: 80px 150px;
+    overflow-y: scroll;
     opacity: 0;
     animation: fadeIn 0.25s forwards;
 
