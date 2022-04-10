@@ -32,7 +32,7 @@ export const ArrowIcon = props => (
         id='Path-4'
         points='1 1 4 4 7 1'
         stroke='#0a7aff'
-        strokeWidth='2'
+        strokeWidth='1'
       />
     </g>
   </svg>

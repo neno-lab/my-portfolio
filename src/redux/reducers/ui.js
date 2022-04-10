@@ -29,11 +29,11 @@ const uiReducer = (state = initState, action) => {
       };
 
     case ADD_PAGE: {
-      const existsInPagesArr = pages.find(page => page.id === action.id);
+      const oldPages = [...state.pages];
+      const existsInPagesArr = oldPages.find(page => page.id === action.page.id);
 
       if (!existsInPagesArr) {
-        const oldPages = state.pages;
-        const newPages = oldPages.push(action.page);
+        const newPages = [...oldPages, action.page];
 
         return {
           ...state,

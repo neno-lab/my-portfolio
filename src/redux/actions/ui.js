@@ -5,9 +5,8 @@ export const actionExampleAction = val => ({
   val
 });
 
-export const actionAddPage = (id, page) => ({
+export const actionAddPage = page => ({
   type: ADD_PAGE,
-  id,
   page
 });
 

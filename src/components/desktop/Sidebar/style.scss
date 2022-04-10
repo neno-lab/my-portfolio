@@ -3,5 +3,29 @@
     max-width: 290px;
     min-width: 290px;
     background-color: var(--light-black);
+    padding: 12px 0;
+  }
+
+  &-dropdown-child {
+    .dropdown-title-holder {
+      padding: 5px 30px;
+    }
+  }
+
+  &-dropdown-list-child-child {
+    list-style: none;
+  }
+
+  &-js-icon {
+    path {
+      fill: rgb(240, 219, 79);
+    }
+  }
+
+  &-closed-folder-icon, &-opened-folder-icon {
+    stroke: var(--pastel-blue);
+    fill: var(--pastel-blue);
+    width: 15px !important;
+    height: 15px !important;
   }
 }

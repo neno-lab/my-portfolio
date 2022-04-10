@@ -1,0 +1,48 @@
+.dropdown {
+  &-big-holder {
+    width: 100%;
+    user-select: none;
+  }
+
+  &-title-holder {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    column-gap: 8px;
+    transition: 0.25s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    & > h5 {
+      color: rgba(255, 255, 255, 0.65);
+    }
+  }
+
+  &-arrow-icon {
+    width: 10px;
+    height: 10px;
+    transform: rotate(-90deg);
+    transition: 0.25s ease;
+    #Path-4 {
+      stroke: rgba(255, 255, 255, 0.65);
+    }
+
+    &.active {
+      transform: rotate(0deg);
+    }
+  }
+
+  &-content-holder {
+    width: 100%;
+    will-change: height, opacity;
+    overflow: hidden;
+    transition: 0.25s ease;
+
+    &.active {
+      overflow: visible;
+    }
+  }
+}

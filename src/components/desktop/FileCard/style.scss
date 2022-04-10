@@ -6,6 +6,7 @@
     align-items: center;
     border-right: 1px var(--black) solid;
     background-color: var(--gray);
+    user-select: none;
     transition: 0.25s ease;
     cursor: pointer;
 
@@ -20,16 +21,9 @@
       color: rgba(255, 255, 255, 0.5);
     }
 
-    & > svg {
-      path {
-        fill: rgba(255, 255, 255, 0.5);
-      }
-    }
-
     &:hover {
       background-color: rgba(255, 255, 255, 0.1);
     }
-
 
     &.active {
       background-color: var(--black);
@@ -38,11 +32,24 @@
         color: var(--white);
       }
 
-      & > svg {
+      .file-card-exit-icon {
         path {
           fill: var(--white);
         }
       }
+    }
+  }
+
+  &-js-icon {
+    path {
+      fill: rgb(240, 219, 79);
+    }
+  }
+
+  &-exit-icon {
+    path {
+      fill: rgba(255, 255, 255, 0.5);
+      transition: 0.25s ease;
     }
   }
 }
