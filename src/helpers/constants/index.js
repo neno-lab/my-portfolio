@@ -193,3 +193,142 @@ export const about = [
     ]
   }
 ];
+
+export const projects = [
+  {
+    id: 0,
+    title: 'Dalmatiko osiguranje',
+    items: [
+      {
+        id: 0,
+        title: null,
+        subtitle: null,
+        date: null,
+        bullets: [
+          {
+            id: 0,
+            text: 'agency project, worked on it from scratch with focus on learning ReactJS, HTML and CSS, GatsbyJS'
+          },
+          {
+            id: 1,
+            text: 'integrated REST API calls with Strapi as CMS'
+          },
+          {
+            id: 2,
+            text: 'custom UI/UX design conversion to HTML, CSS and JSX'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 1,
+    title: 'Gembet',
+    items: [
+      {
+        id: 0,
+        title: null,
+        subtitle: null,
+        date: null,
+        bullets: [
+          {
+            id: 0,
+            text: 'maintained frontend code (ReactJS, HTML, CSS, Redux, WebSockets, webpack)'
+          },
+          {
+            id: 1,
+            text: 'worked on complex user interface for sportsbook with a lot of reactive elements and functional components'
+          },
+          {
+            id: 2,
+            text: 'client WebSocket real-time event driven communication with API'
+          },
+          {
+            id: 3,
+            text: 'created email templates'
+          },
+          {
+            id: 4,
+            text: 'created smaller affiliate standalone pages (HTML, CSS)'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: 'Stadium',
+    items: [
+      {
+        id: 0,
+        title: null,
+        subtitle: null,
+        date: null,
+        bullets: [
+          {
+            id: 0,
+            text: 'created backoffice application (admin panel) for Stadium product in ReactJS, webpack, HTML, CSS, Redux, WebSocket, WebWorkers'
+          },
+          {
+            id: 1,
+            text: 'worked on some of the parts of integratable iframe widget of Stadium'
+          },
+          {
+            id: 2,
+            text: 'project contains very dynamic, content rich user experience which includes big set of problems regarding the rendering of the app, collecting and processing the data from API and overall the project had complex custom visual components which needed to be decoupled and fast for rendering with a lot of dependent functionalities on them'
+          },
+          {
+            id: 3,
+            text: 'backoffice feature stuff like dual real-time chat windows for multiple dynamically created chatrooms with option for hotkeys (shortcuts), command inputs in the message send box, polls, raffles and banner announcements. The backoffice also has realtime newsfeed for admins and personal notifications for admin using the backoffice. It also contains multiple types of messages that could be sent over platform like casino win share or pending betslip share which can be reused by other players to try out their luck via stadium widget integrated on client´s website'
+          },
+          {
+            id: 4,
+            text: 'other known pages includes dynamic settings page with script origin control (custom CORS), standalone pages (tables) for displaying players, shares, messages, announcements etc.'
+          },
+          {
+            id: 5,
+            text: 'complex statistics page render using ChartJS'
+          },
+          {
+            id: 6,
+            text: 'biggest challenge on client script (iframe) was to make it smaller in bundle size and that every functionality is still available'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: 'Knowledge',
+    items: [
+      {
+        id: 0,
+        title: null,
+        subtitle: null,
+        date: null,
+        bullets: [
+          {
+            id: 0,
+            text: 'product like stadium but is running on microservices on backend, it is a knowledge base product aimed for our clients integration with our other products like Stadium'
+          },
+          {
+            id: 1,
+            text: 'created an admin panel for the application from scratch and integratable website from scratch using ReactJS'
+          },
+          {
+            id: 2,
+            text: 'created custom rich text editor using DraftJS with all toolbar functionalities such as changing inline styles (bold, italic, underline), custom styles (links, highlights) and block types (header styles from 1 to 6, unordered and ordered lists, blockquotes, images) '
+          },
+          {
+            id: 3,
+            text: 'we used one build of the application for multiple users with config for each coming from REST API'
+          },
+          {
+            id: 4,
+            text: 'the application would look for subdomain prefix and with the subdomain value which could be dynamically changed from backoffice, the REST API would be used properly to fetch correct set of data for each of our customers'
+          }
+        ]
+      }
+    ]
+  }
+];
